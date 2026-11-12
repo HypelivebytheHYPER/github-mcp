@@ -1,0 +1,21 @@
+{
+  "name": "github-mcp",
+  "version": "0.1.0",
+  "description": "GitHub MCP server — official github-mcp-server over stdio: issues, pull requests, reviews, and code search",
+  "author": { "name": "HypelivebytheHYPER", "url": "https://github.com/HypelivebytheHYPER" },
+  "homepage": "https://github.com/HypelivebytheHYPER/github-mcp",
+  "license": "MIT",
+  "keywords": ["github", "mcp", "issues", "pull-requests", "code-search"],
+  "interface": {
+    "displayName": "GitHub MCP",
+    "shortDescription": "GitHub issues, PRs, reviews, and code search via the official github-mcp-server"
+  },
+  "mcpServers": {
+    "github": {
+      "command": "bash",
+      "args": ["./start-github-mcp.sh"],
+      "cwd": "./",
+      "deferred": true
+    }
+  }
+}
